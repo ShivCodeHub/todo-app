@@ -5,7 +5,7 @@ export default function FilterTabs({ filter, setFilter }) {
         <button
           key={type}
           onClick={() => setFilter(type)}
-          className={`px-3 py-1 rounded ${
+          className={`px-3 py-1 rounded cursor-pointer ${
             filter === type
               ? "bg-cyan-500 text-white"
               : "bg-gray-600 text-gray-300"

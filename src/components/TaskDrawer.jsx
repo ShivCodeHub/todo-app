@@ -19,7 +19,7 @@ export default function TaskDrawer({ open, onClose, onSave, editingTask }) {
         </h2>
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-gray-200 text-xl"
+          className="absolute top-4 right-4 text-gray-400 hover:text-gray-200 text-xl cursor-pointer"
         >
           ✕
         </button>
@@ -35,7 +35,7 @@ export default function TaskDrawer({ open, onClose, onSave, editingTask }) {
         <div className="absolute bottom-6 left-6 flex gap-2">
           <button
             onClick={onClose}
-            className="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-white"
+            className="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-white cursor-pointer"
           >
             Cancel
           </button>
@@ -46,7 +46,7 @@ export default function TaskDrawer({ open, onClose, onSave, editingTask }) {
                 setText("");
               }
             }}
-            className="bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded text-white flex items-center gap-2"
+            className="bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded text-white flex items-center gap-2 cursor-pointer"
           >
             <FontAwesomeIcon icon={faFloppyDisk} />
             Save Task

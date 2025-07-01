@@ -28,13 +28,13 @@ export default function TaskItem({ task, onToggle, onDelete, onEdit }) {
       <div className="flex items-center gap-3 text-lg">
         <button
           onClick={() => onEdit(task)}
-          className="text-cyan-400 hover:text-cyan-300 opacity-80"
+          className="text-cyan-400 hover:text-cyan-300 opacity-80 cursor-pointer"
         >
           <FontAwesomeIcon icon={faPen} />
         </button>
         <button
           onClick={() => onDelete(task.id)}
-          className="text-white hover:text-red-400 opacity-60 text-xl"
+          className="text-white hover:text-red-400 opacity-60 text-xl cursor-pointer"
         >
           <FontAwesomeIcon icon={faTrashCan} />
         </button>
