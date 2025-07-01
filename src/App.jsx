@@ -11,7 +11,11 @@ export default function App() {
   const [editingTask, setEditingTask] = useState(null);
 
   const filteredTasks = tasks.filter((task) =>
-    filter === "all" ? true : filter === "active" ? !task.completed : task.completed
+    filter === "all"
+      ? true
+      : filter === "active"
+      ? !task.completed
+      : task.completed
   );
 
   const handleSave = (taskText) => {
@@ -64,9 +68,16 @@ export default function App() {
             }}
           />
         </div>
-        <p className="mt-6 text-center text-gray-500 text-sm">
-          Crafted with ❤️ Powered by React & TailwindCSS
-        </p>
+        {/* <div className="mt-10 px-4 pb-6 pt-4 rounded-lg bg-[#0F172A]"> */}
+        {/* <hr className="border-t border-gray-600 mb-1" /> */}
+        <div className="border-t border-gray-600 mt-6 pt-4">
+          <p className="text-center text-gray-400 text-sm">
+            Crafted with <span className="text-red-500">❤️</span>
+            <br />
+            Powered by React, TypeScript & TailwindCSS
+          </p>
+        </div>
+
       </div>
 
       <TaskDrawer
